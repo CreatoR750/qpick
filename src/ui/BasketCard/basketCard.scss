@@ -1,0 +1,74 @@
+.basket-card {
+    width: 640px;
+    height: 220px;
+    padding: 20px;
+    background: #ffffff;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-between;
+
+    &__left {
+        display: flex;
+        width: 90%;
+
+        &__wrapper {
+            display: flex;
+            width: 30%;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        &__image {
+            width: 140px;
+        }
+
+        &__buttons {
+            display: flex;
+            width: 80%;
+            justify-content: space-between;
+            align-items: center;
+            img {
+                cursor: pointer;
+            }
+        }
+
+        &__info {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+
+            &__wrapper {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                height: 35%;
+            }
+            &__title {
+                font-size: 17px;
+                font-weight: 500;
+            }
+            &__price {
+                font-size: 15px;
+                font-weight: 600;
+                color: #aaaaaa;
+            }
+        }
+    }
+
+    &__right {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-end;
+        width: 20%;
+        span {
+            font-size: 15px;
+            font-weight: 500;
+        }
+        img {
+            cursor: pointer;
+        }
+    }
+}
